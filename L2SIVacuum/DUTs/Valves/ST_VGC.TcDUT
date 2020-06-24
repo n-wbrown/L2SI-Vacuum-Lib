@@ -57,21 +57,21 @@ STRUCT
     pv: ERR_DifPres;
 	field: ZNAM NO ERROR ;
 	field: ONAM Diffrential error present ;
-	io: o;
+	io: i;
     '}
 	xERR_DifPres		: 	BOOL;
 	{attribute 'pytmc' := '
     pv: ERR_SP;
 	field: ZNAM NO ERROR ;
 	field: ONAM Setpoint error present ;
-	io: o;
+	io: i;
     '}
 	xERR_SP			: 	BOOL;
 	{attribute 'pytmc' := '
     pv: ERR_Ext;
 	field: ZNAM NO ERROR ;
 	field: ONAM External error present ;
-	io: o;
+	io: i;
     '}
 	xERR_ExtFault		: 	BOOL;
 	xAlmSum			: 	BOOL;
@@ -79,12 +79,12 @@ STRUCT
 (*ILK Devices*)
 {attribute 'pytmc' := '
     pv: ILK_DEVICE_US;
-	io: o;
+	io: i;
     '}
 	sIlkUSDeviceName: STRING;
 	{attribute 'pytmc' := '
     pv: ILK_DEVICE_DS;
-	io: o;
+	io: i;
     '}
 	sIlkDSDeviceName: STRING;
 
